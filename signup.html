@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: #219ebc;
+        }
+
+        .container {
+            border-radius: 8px;
+            margin: 130px auto;
+            max-width: 350px;
+            max-height: 400px;
+            background-color: white;
+            padding: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            text-align: center;
+            padding-bottom: 9px;
+            color: #023047;
+
+        }
+
+        .up {
+            color: #023047;
+        }
+
+        .container input {
+            text-overflow: hidden;
+            border: 2px solid grey;
+            border-radius: 10px;
+            padding: 5px 50px;
+            margin: 7px 0;
+
+
+        }
+
+
+
+
+        .btn {
+            margin: 9px 0px;
+            height: 30px;
+            border-radius: 8px;
+            border: 2px solid;
+            color: white;
+            background-color: #023047;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://getform.io/f/2a9a9de1-2b9b-4cff-bf28-f7bc5b4e63aa" method="POST">
+            <h2>Sign Up!</h2>
+            <hr>
+
+            <div>
+                <label for="FullName">FullName</label><br>
+                <input type="text" name="FullName" id="FullName" placeholder="Name..." required>
+            </div>
+            <div>
+                <label for="Email">Email</label><br>
+                <input type="Email" name="Email" id="Email" placeholder="Email Adress..." required>
+            </div>
+            <div>
+                <label for="Username">UserName</label><br>
+                <input type="text" name="Username" id="Username" placeholder="UserName..." required>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+                <label for="checkbox">I Agree To The <span>Terms Of User</span></label>
+            </div>
+            <button class="btn" type="submit">Sign UP</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
